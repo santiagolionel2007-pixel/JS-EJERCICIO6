@@ -1,0 +1,13 @@
+<select id="pizza" onchange="mostrarPrecio()">
+  <option value="400">Jamón y Queso</option>
+  <option value="500">Muzzarella</option>
+  <option value="600">Morrones</option>
+</select>
+<input type="text" id="precio" readonly>
+
+<script>
+function mostrarPrecio() {
+  let precio = document.getElementById("pizza").value;
+  document.getElementById("precio").value = "$" + precio;
+}
+</script>
